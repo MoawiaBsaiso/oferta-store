@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="stylesheet" href="css/navbar.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="body-overlay"></div>
+    <header class="header" id="header">
+        <nav class="navbar-container containerx">
+           <a href="#" class="brand">متجر <span> أوفرتا</span>   </a>
+           <div class="search">
+            <form class="search-form">
+               <input type="text" name="search" class="search-input" placeholder="بحث" autocomplete="off">
+               <button class="search-clear" aria-label="Clear search"><ion-icon name="close-circle-outline"></ion-icon></button>
+               <button type="submit" class="search-submit" disabled><ion-icon name="search-outline"></ion-icon></button>
+
+            </form>
+           </div>
+           <div class="menu" id="menu">
+              <ul class="menu-inner">
+                 <li class="menu-item"><a href="#" class="menu-link"><ion-icon name="language-outline"></ion-icon> <span class="text-nav-hidden">العربية</span></a></li>
+                 <li class="menu-item"><a href="#" class="menu-link"><ion-icon name="person-outline"></ion-icon>  <span class="text-nav-hidden">تسجيل الدخول</span></a></li>
+                 <li class="menu-item"><a href="#" class="menu-link"><div class="cart-enumeration" >10</div><ion-icon name="cart-outline"></ion-icon>  <span class="text-nav-hidden">سلة التسوق</span></a></li>
+                 <li class="menu-item"><button class="myButton"><a href="#" >انضم ك متجر</a></button></li>
+              </ul>
+           </div>
+           <div class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+           </div>
+        </nav>
+     </header>
+<!-- Start Second header -->
+
+ 
+<section class="header-2">
+    <div class="navbars containerx">
+        <a href="#">الرئيسية</a>
+        <a href="#">المطاعم</a>
+        <a href="#">المتاجر</a>
+        <a href="#">السوبرماركت</a>
+        <a href="#">الصيدلية</a>
+        <a href="#">أثاث</a>
+        <a href="#">الإلكترونيات</a>
+        <a href="#">الجمال و العطور</a>
+        <a href="#">رياضة</a>
+        <a href="#">جميع المتاجر</a>
+    </div> 
+</section>
+<section class="header-2-alter">
+  <nav class="navs">
+    <a href="#" class="nav__link">
+      <i class="material-icons nav__icon">dashboard</i>
+      <span class="nav__text">الرئيسية</span>
+    </a>
+    <div class="nav__link dropdowns">
+      <i class="material-icons nav__icon">view_list</i>
+      <span class="nav__text">التصنيفات</span>
+      
+    </div>
+    <a href="#" class="nav__link">
+      <i class="material-icons nav__icon">store</i>
+      <span class="nav__text">جميع المتاجر</span>
+    </a>
+  </nav>
+  <div class="dropdown-menus">
+    <div class="close-icon">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <a href="#">المطاعم</a>
+    <a href="#">المتاجر</a>
+    <a href="#">السوبرماركت</a>
+    <a href="#">الصيدلية</a>
+    <a href="#">أثاث</a>
+    <a href="#">الإلكترونيات</a>
+    <a href="#">الجمال و العطور</a>
+    <a href="#">رياضة</a>
+  </div>
+</section>
+<!-- End Second header  -->
+<!-- Start nav of search -->
+<section class="nav-of-search" style="position: relative;">
+   <div class="breadcrumb">
+      <a href="index.html">الرئيسية</a> >
+      <a href="#">الإلكترونيات و الموبايلات</a> >
+      <a href="#">هاتف أبل</a>
+    </div>
+    
+</section>
+
+
+<!-- End nav of search -->
+<!-- Start Section product page -->
+    <div class="product-page">
+        <div class="contain-above">
+          <div class="product-images">
+            <div class="product-small-img">
+             <img src="images/single-product/Iphone-side-1.png" onclick="showProductSide(this)" alt="">
+             <img src="images/single-product/Iphone-side-2.png" onclick="showProductSide(this)" alt="">
+             <img src="images/single-product/Iphone-side-3.png" onclick="showProductSide(this)" alt="">
+             <img src="images/single-product/Iphone-side-1.png" onclick="showProductSide(this)" alt="">
+             <img src="images/single-product/Iphone-side-2.png" onclick="showProductSide(this)" alt="">
+             <img src="images/single-product/Iphone-side-3.png" onclick="showProductSide(this)" alt="">
+            </div>
+            <div class="img-container">
+             <img id="imageBox" src="images/single-product/Iphone-product.png" alt="">
+            </div>
+           </div>
+          <div class="product-info">
+            <h1>أبل</h1>
+            <p>هاتف آيفون 14 برو ماكس بذاكرة داخلية 256 جيجابايت وبتقنية 5G مع تطبيق فيس تايم بلون ليلكي عميق - إصدار الشرق الأوسط.</p>
+            <div class="product-model"><span class="model-name">رقم الموديل : MQ9X3AA/A, MQ9E3AH/A</span>
+              <span class="model-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <div class="price-product">
+              <h3>5099.00 ر.س. <span class="span-beside">شامل ضريبة القيمة المضافة</span>
+              </h3>
+            </div>
+            <div class="product-discount"><span>5799.00 ر.س.</span><span>خصم50%</span></div>
+          <div class="save-discount"><h3>جار الحفظ 300 ريال  سعودي خصم 50%!</h3></div>
+          <div class="increase-decrease-num">
+            <span>الكمية :</span>
+            <form class="control-num">
+              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+              <input type="number" id="number" value="0" />
+              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            </form>
+          </div>
+          <div class="box-information">
+            <p class="title-box">نسخة : <span class="type-change">  إصدار ثنائي الشريحة   </span></p>
+            <div class="boxes">
+              <div class="p">إصدار ثنائي الشريحة</div>
+              <div class="p">نسخة الشرق الأوسط</div>
+              <div class="p">نسخة الولايات المتحدة</div>
+              <div class="p">نسخة عالمية</div>
+            </div>
+
+          </div>
+          <div class="box-information">
+            <p class="title-box">الذاكرة الداخلية : <span class="type-change">  512 جيجابايت </span></p>
+            <div class="boxes">
+              <div class="p">إصدار ثنائي الشريحة</div>
+              <div class="p">نسخة الشرق الأوسط</div>
+              <div class="p">نسخة الولايات المتحدة</div>
+              <div class="p">نسخة عالمية</div>
+            </div>
+
+          </div>
+          <div class="box-information">
+            <p class="title-box">اسم اللون : <span class="type-change">  أسود ملكي </span></p>
+            <div class="boxes">
+              <div class="img1"><img src="images/single-product/info-product/gold-iphone.png" alt=""> </div>
+              <div class="img2"><img src="images/single-product/info-product/gold-iphone.png" alt=""> </div>
+              <div class="img3"><img src="images/single-product/info-product/gold-iphone.png" alt=""> </div>
+              <div class="img4"><img src="images/single-product/info-product/gold-iphone.png" alt=""> </div>
+            </div>
+            <button class="add-to-cart-button">أضف إلى سلة التسوق</button>
+            <div class="checklist">
+              <h2>يباع معها أيضاً</h2>
+              <div class="checklist-items">
+                <label>
+                  <input type="checkbox" class="checkbox">
+                  <div class="checklist-item">
+                    <!-- <div class="checklist-check"></div> -->
+                    <img src="images/single-product/info-product/check-product-3.png" alt="Item 1">
+                    
+                  </div>
+                  <h3 class="price-product">5099.00 ر.س.</h3>
+                    <p>أيفون 14 برو ماكس بذاكرة داخلية 256 جيجابايت</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="checkbox">
+                  <div class="checklist-item">
+                    <!-- <div class="checklist-check"></div> -->
+                    <img src="images/single-product/info-product/check-product-1.png" alt="Item 2">
+                    
+                  </div>
+                  <h3 class="price-product">44 ر.س.</h3>
+                  <p>أيفون 14 برو ماكس بذاكرة داخلية 256 جيجابايت</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="checkbox">
+                  <div class="checklist-item">
+                    <!-- <div class="checklist-check"></div> -->
+                    <img src="images/single-product/info-product/check-product-2.png" alt="Item 3">
+                    
+                  </div>
+                  <h3 class="price-product">399 ر.س.</h3>
+                  <p>أيفون 14 برو ماكس بذاكرة داخلية 256 جيجابايت</p>
+                </label>
+              </div>
+              <div class="offer-title">
+                <h1>اشتر معا ب سعر 7000 ر.س.</h1>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+          </div>
+        </div>
+        <div class="product-guarantee">
+          <div class="guarantee-info guarantee-years">
+            <img src="images/icons/badge.png" alt="">
+            <p>ضمان لمدة <span  class="years" >عامين</span></p>
+          </div>
+          <div class="guarantee-info guarantee-return">
+            <img src="images/icons/wallet.png" alt="">
+            <p>إرجاع سهل لكل المنتجات في هذا العرض.</p>
+          </div>
+          <div class="guarantee-info guarantee-shipping">
+            <img src="images/icons/shipping.png" alt="">
+            <div class="info-shipping">
+              <p>شحن مجاني </p>
+            <span>توصيل مجاني عند شراء  بـ 100 ريال أو أكثر </span>
+            </div>
+          </div>
+          <div class="guarantee-info guarantee-store">
+            <img src="images/icons/shop-store.png" alt="">
+              <p> Modern Store Technology </p>
+            <span class="model-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+          </div>
+          <div class="guarantee-info image-with-text">
+            <div class="text-over-img">
+              <img src="images/icons/sales-background.png" alt="Product Image">
+            <p class="image-text">احصل على خصم  يصل الى 20% عند اشتراكك بالمتجر .. <span class="subscribe" style="color: red;">اشترك الآن!</span></p>
+            </div>
+          </div>
+          <div class="guarantee-info evaluation">
+            <span>تقييم المنتج</span>
+            <span class="model-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            <span class="percent-rate">80%</span>
+            <span>المنتج كما في الوصف</span>
+          </div>
+          <div class="net-information">
+            <div class="guarantee-info">
+              <img src="images/icons/wallet.png" alt="">
+            <p>إرجاع سهل لكل المنتجات في هذا العرض.</p>
+            </div>
+            <div class="guarantee-info">
+              <img src="images/icons/shipping.png" alt="">
+            <p>إرجاع سهل لكل المنتجات في هذا العرض.</p>
+            </div>
+            <div class="guarantee-info">
+              <img src="images/icons/badge.png" alt="">
+            <p>ضمان لمدة <span  class="years" >عامين</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Section product page -->
+<!-- Start Tab Section -->
+
+<section class="tab-sec">
+  <div class="tabs">
+    <div class="tab active" onclick="changeTab(0)">تفاصيل المنتج</div>
+    <div class="tab" onclick="changeTab(1)">المواصفات</div>
+    <div class="tab" onclick="changeTab(2)">التقييمات</div>
+  </div>
+  
+  <div class="tab-contents">
+    <div class="tab-content tab-detail-content active">
+      <!-- Content for تفاصيل المنتج tab -->
+      <h3>الميزات الأساسية</h3>
+      <ul id="product-details"></ul>
+      <p>
+
+      </p>
+    </div>
+    <div class="tab-content">
+      <!-- Content for المواصفات tab -->
+      <div class="product-specs">
+        <h3>المواصفات </h3>
+        <div class="contain-specs">
+
+          <ul>
+            <li>مقبس الصوت منفذ كابل Lightning</li>
+            <li>حجم البطارية 4323 مللي أمبير / ساعة</li>
+            <li>نوع البطارية ليثيوم أيون</li>
+            <li>اسم اللون ليلكي عميق</li>
+            <li>نوع التوصيل واي فاي + خلوي</li>
+            <li>شبكة جديدة تقنية 5G</li>
+            <li>نوع الذاكرة القابلة للزيادة بدون ذاكرة قابلة للزيادة</li>
+            <li>شحن سريع Yes</li>
+            <li>فلاش مزدوج</li>
+            <li>الذاكرة الداخلية 256 جيجابايت</li>
+            <li>اسم الموديل iPhone 14 Pro Max</li>
+          </ul>
+          <ul>
+            <li>مقبس الصوت منفذ كابل Lightning</li>
+            <li>حجم البطارية 4323 مللي أمبير / ساعة</li>
+            <li>نوع البطارية ليثيوم أيون</li>
+            <li>اسم اللون ليلكي عميق</li>
+            <li>نوع التوصيل واي فاي + خلوي</li>
+            <li>شبكة جديدة تقنية 5G</li>
+            <li>نوع الذاكرة القابلة للزيادة بدون ذاكرة قابلة للزيادة</li>
+            <li>شحن سريع Yes</li>
+            <li>فلاش مزدوج</li>
+            <li>الذاكرة الداخلية 256 جيجابايت</li>
+            <li>اسم الموديل iPhone 14 Pro Max</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content">
+      <!-- Content for التقييمات tab -->
+      <h3>التقييمات</h3>
+      <p>التقييمات هنا...</p>
+      <div class="product-specs">
+        <h3>المواصفات </h3>
+        <div class="contain-specs">
+
+          <ul>
+            <li>مقبس الصوت منفذ كابل Lightning</li>
+            <li>حجم البطارية 4323 مللي أمبير / ساعة</li>
+            <li>نوع البطارية ليثيوم أيون</li>
+            <li>اسم اللون ليلكي عميق</li>
+            <li>نوع التوصيل واي فاي + خلوي</li>
+            <li>شبكة جديدة تقنية 5G</li>
+            <li>نوع الذاكرة القابلة للزيادة بدون ذاكرة قابلة للزيادة</li>
+            <li>شحن سريع Yes</li>
+            <li>فلاش مزدوج</li>
+            <li>الذاكرة الداخلية 256 جيجابايت</li>
+            <li>اسم الموديل iPhone 14 Pro Max</li>
+          </ul>
+          <ul>
+            <li>مقبس الصوت منفذ كابل Lightning</li>
+            <li>حجم البطارية 4323 مللي أمبير / ساعة</li>
+            <li>نوع البطارية ليثيوم أيون</li>
+            <li>اسم اللون ليلكي عميق</li>
+            <li>نوع التوصيل واي فاي + خلوي</li>
+            <li>شبكة جديدة تقنية 5G</li>
+            <li>نوع الذاكرة القابلة للزيادة بدون ذاكرة قابلة للزيادة</li>
+            <li>شحن سريع Yes</li>
+            <li>فلاش مزدوج</li>
+            <li>الذاكرة الداخلية 256 جيجابايت</li>
+            <li>اسم الموديل iPhone 14 Pro Max</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+<!-- End Tap Section -->
+
+<!-- Start section -->
+<section class="product-section">
+  <h2 class="section-title">المزيد من هذا المتجر</h2>
+  <div id="main-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide product-slide">
+          <img src="images/products/clock.png" alt="Product 1 Color 1">
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide">
+          <img src="images/products/clock.png" alt="Product 1 Color 1">
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide">
+          <img src="images/products/clock.png" alt="Product 1 Color 1">
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide">
+          <img src="images/products/clock.png" alt="Product 1 Color 1">
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide">
+          <img src="images/products/clock.png" alt="Product 1 Color 1">
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide">
+          <img src="images/products/clock.png" alt="Product 1 Color 1">
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <!-- Add more product items as needed -->
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- End section -->
+<!-- Start Section Best offers -->
+<section class="product-section">
+  <h2 class="section-title">مناسب مع</h2>
+  <div id="offer-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide product-slide ">
+                     <img src="images/products/clock.png" alt="Product 1 Color 1">
+
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide ">
+                     <img src="images/products/clock.png" alt="Product 1 Color 1">
+
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide ">
+                     <img src="images/products/clock.png" alt="Product 1 Color 1">
+
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide ">
+                     <img src="images/products/clock.png" alt="Product 1 Color 1">
+
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide ">
+                     <img src="images/products/clock.png" alt="Product 1 Color 1">
+
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <li class="splide__slide product-slide ">
+                     <img src="images/products/clock.png" alt="Product 1 Color 1">
+
+          <div class="product-detail">
+            <h4>ساعة يد - رجالي -فضي-Polo Air -ساعة يد -ساعة يد ...</h4>
+            <div class="product-price">ر.س.200</div>
+            <div class="product-discount"><span>400</span><span>خصم50%</span></div>
+            <div class="product-store"><span class="store-name">متجر مودانيسا</span>
+              <span class="store-rating-text"><span class="rating">4.4<ion-icon name="star"></ion-icon></span> (200)</span>
+            </div>
+            <button class="add-to-cart-btn">أضف إلى السلة</button>
+          </div>
+        </li>
+        <!-- Add more product items as needed -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- End product Section -->
+
+<!-- Start Contact Section -->
+<section class="contact-section">
+  <div class="contact-title">
+<h2>متواجدين دائما لمساعدتك</h2>
+<p>تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+  </div>
+  <div class="contact-ways">
+<div class="telephone-way">
+  <ion-icon name="call-outline"></ion-icon>
+  <p>الهاتف<br> 965478321</p>
+</div>
+<div class="mail-way">
+  <ion-icon name="mail-outline"></ion-icon>
+  <p>البريد الإلكتروني<br> 
+     pexibovi@mailinator.com
+     </p>
+</div>
+  </div>
+</section> 
+<!-- End Contact Section -->
+</footer> 
+ 
+<footer>
+   <div class="footer-container">
+     <div class="columns">
+      <div class="column">
+         <h4>المطاعم</h4>
+         <ul>
+           <li><a href="#">المقبلات</a></li>
+           <li><a href="#">الوجبات الرئيسية</a></li>
+           <li><a href="#">المشروبات</a></li>
+           <li><a href="#">الحلويات</a></li>
+         </ul>
+       </div>
+       <div class="column">
+         <h4>الأزياء</h4>
+         <ul>
+           <li><a href="#">ملابس رجالي</a></li>
+           <li><a href="#">ملابس نسائي</a></li>
+           <li><a href="#">ملابس أطفال</a></li>
+           <li><a href="#">ملابس رياضة</a></li>
+           <li><a href="#">اكسسورارات</a></li>
+           <li><a href="#">احذية</a></li>
+           <li><a href="#">حقائب</a></li>
+         </ul>
+       </div>
+       <div class="column">
+         <h4>الجمال</h4>
+         <ul>
+           <li><a href="#">العطور</a></li>
+           <li><a href="#">المكياج</a></li>
+           <li><a href="#">العناية بالبشرة</a></li>
+           <li><a href="#">العناية بالشعر</a></li>
+           <li><a href="#">منتجات الرعاية الصحية</a></li>
+           <li><a href="#">لوازم طبية</a></li>
+         </ul>
+       </div>
+       <div class="column">
+         <h4>الأثاث</h4>
+         <ul>
+           <li><a href="#">أسرة و مراتب</a></li>
+           <li><a href="#">تخزين وتنظيم</a></li>
+           <li><a href="#">زينة وديكور</a></li>
+           <li><a href="#">أدوات مطبخ وأواني مائدة</a></li>
+           <li><a href="#">إضاءة</a></li>
+           <li><a href="#">سجاد و داواسات و أرضيات</a></li>
+         </ul>
+       </div>
+       <div class="column">
+         <h4>أغراض السوبر ماركت اليومية</h4>
+         <ul>
+           <li><a href="#">المنتجات الطازجة</a></li>
+           <li><a href="#">المخبوزات والخبز</a></li>
+           <li><a href="#">البيض والألبان</a></li>
+           <li><a href="#">طعام الفطور</a></li>
+           <li><a href="#">المواد الغذائية</a></li>
+           <li><a href="#">مستلزمات البيت</a></li>
+         </ul>
+       </div>
+       <div class="column">
+         <h4>أفضل الماركات</h4>
+         <ul>
+           <li><a href="#">أبل</a></li>
+           <li><a href="#">نايك</a></li>
+           <li><a href="#">سامسونج</a></li>
+           <li><a href="#">تيفال</a></li>
+           <li><a href="#">لوريال باريس</a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="contact-social">
+      <h4>التواصل الاجتماعي</h4>
+      <ul class="social-media-icons">
+        <li><a href="#"><ion-icon name="logo-snapchat"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul>
+    </div>
+     <!-- Repeat the structure for the remaining columns -->
+   </div>
+   
+  </div>
+ </footer>
+ <div class="copyright">
+   <div class="separate-content">
+      <ul class="left-side">
+        <li>©   جميع الحقوق محفوظة لمتجر اوفرتا 2023 </li>
+        <li><a href="#">سياسة الضمان</a></li>
+        <li><a href="#">شروط الاستخدام</a></li>
+        <li><a href="#">شروط البيع</a></li>
+        <li><a href="#">سياسة الخصوصية</a></li>
+        <li><a href="#">بِع معنا</a></li>
+      </ul>
+      <div class="right-side">
+         <a class="payment-method">
+            <img src="images/copyrigth-footer/Stc-pay.png" alt="Payment Method 1">
+          </a>
+          <a class="payment-method">
+            <img src="images/copyrigth-footer/mada.png" alt="Payment Method 2">
+          </a>
+          <a class="payment-method">
+            <img src="images/copyrigth-footer/master-card.png" alt="Payment Method 3">
+          </a>
+          <a class="payment-method">
+            <img src="images/copyrigth-footer/VISA.png" alt="Payment Method 4">
+          </a>
+          <a class="payment-method">
+            <img src="images/copyrigth-footer/apple-Pay.png" alt="Payment Method 5">
+          </a>
+      </div>
+    </div>
+ </div>
+ 
+ 
+<!-- End Footer -->
+
+
+
+
+
+<!-- jquery-->
+<!-- <script src="js/jquery.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- Custom -->
+<script src="js/custom.js" ></script>
+<!-- Slider Hero -->
+<script src="js/slider-hero.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+
+function initializeSlider(selector) {
+return new Splide(selector, {
+direction: 'rtl',
+drag: false,
+perPage: 6,
+// rewind: true,
+focus: 0,
+omitEnd: true,
+type: 'loop',
+padding: { left: '2rem', right: '0rem' },
+perMove: 1,
+arrows: true,
+pagination: false,
+gap: 10,
+breakpoints: {
+1400: { perPage: 5 },
+1200: { perPage: 4, arrows: true, pagination: false },
+1000: { perPage: 3 },
+768: { perPage: 2, arrows: true },
+500: { perPage: 1, arrows: true },
+320: { perPage: 1, arrows: true },
+},
+}).mount();
+}
+
+// Initialize main slider
+var mainSlider = initializeSlider('#main-slider');
+
+// Initialize offer slider
+var offerSlider = initializeSlider('#offer-slider');
+
+});
+        // const text = `يتميز آيفون 13 بتدرج لوني سينمائي واسع وقياسي، حيث يعرض الألوان كما أرادها صانعو الأفلام بالضبط. وبفضل دقة الألوان العالية، ستعرض الشاشة صورًا طبيعية بشكل مذهل. يعمل معالج A15 بايونيك فائق السرعة على تشغيل الوضع السينمائي وأنماط التصوير الفوتوغرافي والنص المباشر والمزيد. مزود بنظام حماية آمن يمكنه تأمين المعلومات الشخصية مثل بيانات بصمة الوجه وجهات الاتصال لديك لقد صممنا هيكلاً جديداً كلياً وحولنا العدسات بزاوية 45 درجة لتناسب أفضل نظام كاميرا مزدوجة لدينا على الإطلاق - مع أكبر مستشعر للكاميرا العريضة. كما وفرنا مجالاً للتثبيت البصري للصورة بتحويل المستشعر تحكم صوتي، وتسجيل صوتي، وتركيز للصورة، وتكبير، ودعم لتقنيتي RTT و TTY، ودعم لسيري وعملية الإملاء، والطباعة باستخدام سيري، والتحكم بالسويتش، والتعليقات المغلقة، ونظام اللمس المساعد، والشاشة المتكلمة، والنقر الخلفي المكالمات الصوتية: فيس تايم صوتي ونقل الصوت من خلال تقنية LTE ومكالمات عبر شبكة واي فاي وتأثير صوتي ثلاثي الأبعاد وعزل الصوت وأوضاع ميكروفون واسعة الطيف؛ مكالمات الفيديو: مكالمات فيديو عبر فيس تايم من خلال شبكة خلوية أو واي فاي، مكالمات فيديو بدقة عالية الوضوح عبر فيس تايم (1080p) بتقنية 5G أو واي فاي ووضع رأسي في فيديو فيس تاي وصوت ثلاثي الأبعاد وعزل الصوت وأوضاع ميكروفون واسعة الطيف وتكبير للكاميرا الخلفية؛ مزود بتطبيق فيس تايم ويمكن الوصول إليه في المناطق التي يسمح فيها مشغلو الشبكة باستخدام فيس تايم بفضل عدستها المعاد تصميمها ونظام الضبط البؤري التلقائي القوي، يمكن للكاميرا فائقة الاتساع التركيز على 2 سم فقط - ما يجعل حتى أصغر التفاصيل تبدو ملحمية. يحول ورقة الشجرة إلى فن تجريدي. ويلتقط زغب اليرقات. ويكبر قطرة الندى. اكتشاف جمال الأجسام الصغيرة في انتظارك`;
+
+// const statements = text.split('. ');
+
+const text = `يتميز آيفون 13 بتدرج لوني سينمائي واسع وقياسي، حيث يعرض الألوان كما أرادها صانعو الأفلام بالضبط. وبفضل دقة الألوان العالية، ستعرض الشاشة صورًا طبيعية بشكل مذهل. يعمل معالج A15 بايونيك فائق السرعة على تشغيل الوضع السينمائي وأنماط التصوير الفوتوغرافي والنص المباشر والمزيد. مزود بنظام حماية آمن يمكنه تأمين المعلومات الشخصية مثل بيانات بصمة الوجه وجهات الاتصال لديك لقد صممنا هيكلاً جديداً كلياً وحولنا العدسات بزاوية 45 درجة لتناسب أفضل نظام كاميرا مزدوجة لدينا على الإطلاق - مع أكبر مستشعر للكاميرا العريضة. كما وفرنا مجالاً للتثبيت البصري للصورة بتحويل المستشعر تحكم صوتي، وتسجيل صوتي، وتركيز للصورة، وتكبير، ودعم لتقنيتي RTT و TTY، ودعم لسيري وعملية الإملاء، والطباعة باستخدام سيري، والتحكم بالسويتش، والتعليقات المغلقة، ونظام اللمس المساعد، والشاشة المتكلمة، والنقر الخلفي المكالمات الصوتية: فيس تايم صوتي ونقل الصوت من خلال تقنية LTE ومكالمات عبر شبكة واي فاي وتأثير صوتي ثلاثي الأبعاد وعزل الصوت وأوضاع ميكروفون واسعة الطيف؛ مكالمات الفيديو: مكالمات فيديو عبر فيس تايم من خلال شبكة خلوية أو واي فاي، مكالمات فيديو بدقة عالية الوضوح عبر فيس تايم (1080p) بتقنية 5G أو واي فاي ووضع رأسي في فيديو فيس تاي وصوت ثلاثي الأبعاد وعزل الصوت وأوضاع ميكروفون واسعة الطيف وتكبير للكاميرا الخلفية؛ مزود بتطبيق فيس تايم ويمكن الوصول إليه في المناطق التي يسمح فيها مشغلو الشبكة باستخدام فيس تايم بفضل عدستها المعاد تصميمها ونظام الضبط البؤري التلقائي القوي، يمكن للكاميرا فائقة الاتساع التركيز على 2 سم فقط - ما يجعل حتى أصغر التفاصيل تبدو ملحمية. يحول ورقة الشجرة إلى فن تجريدي. ويلتقط زغب اليرقات. ويكبر قطرة الندى. اكتشاف جمال الأجسام الصغيرة في انتظارك`;
+
+const productDetailsList = document.getElementById("product-details");
+const statements = text.split('. ');
+console.log(statements);
+
+statements.forEach((statement) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = statement;
+  productDetailsList.appendChild(listItem);
+});
+
+
+       function changeTab(tabIndex) {
+  // Remove the 'active' class from all tabs and tab contents
+  const tabs = document.getElementsByClassName('tab');
+  const tabContents = document.getElementsByClassName('tab-content');
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+    tabContents[i].classList.remove('active');
+  }
+
+  // Add the 'active' class to the selected tab and tab content
+  const selectedTab = document.getElementsByClassName('tab')[tabIndex];
+  const selectedTabContent = document.getElementsByClassName('tab-content')[tabIndex];
+  selectedTab.classList.add('active');
+  selectedTabContent.classList.add('active');
+}
+
+
+        /* ---------------------- */
+          // display image in the bug screen
+        /* ---------------------- */
+        function showProductSide(smallImg) {
+          var fullImg = document.querySelector("#imageBox")
+          fullImg.src = smallImg.src
+        }
+         /* ---------------------- */
+          // increase/decrease number
+        /* ---------------------- */
+        
+        function increaseValue() {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          value++;
+          document.getElementById('number').value = value;
+        }
+        
+        function decreaseValue() {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          value < 1 ? value = 1 : '';
+          value--;
+          document.getElementById('number').value = value;
+        }
+              </script>
+</body>
+</html>

@@ -115,3 +115,28 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+
+/* Search Bar  */ 
+document.addEventListener('DOMContentLoaded', function() {
+  const searchForm = document.querySelector('.search-form');
+  const searchInput = document.querySelector('.search-input');
+  const searchClear = document.querySelector('.search-clear');
+  const search = document.querySelector('.search');
+  searchInput.addEventListener('focus', function() {
+    searchForm.classList.add('expanded');
+    search.classList.add('expanded');
+  });
+
+  searchInput.addEventListener('blur', function() {
+    if (searchInput.value === '') {
+      searchForm.classList.remove('expanded');
+      search.classList.remove('expanded');
+    }
+  });
+
+  searchClear.addEventListener('click', function() {
+    searchInput.value = '';
+    searchInput.focus();
+  });
+});
